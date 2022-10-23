@@ -35,7 +35,7 @@ public class Leaderboard : MonoBehaviour
         yield return new WaitWhile(() => done == false);
     }
 
-    public IEnumerator FetchTopHighscoresRoutine()
+    public IEnumerator FetchTopHighScoresRoutine()
     {
         bool done = false;
         LootLockerSDKManager.GetScoreListMain(leaderboardID, 10, 0, (response) =>
